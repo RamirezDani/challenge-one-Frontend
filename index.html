@@ -343,13 +343,12 @@
                     <p class="formcontato__subtext">¿Quieres contactarme?</p>
                     <p class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
                         usted lo antes posible. </p>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                            placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                    <form id=formulario__form class="formcontato__form" name="form">
+                        <input id="nombre__form" class="formcontato__input" type="text" name="nombre" placeholder="Nombre" pattern="[A-Za-záéíóúüñÑ\s]{3,}" required maxlength="50">
+                        <input id=email__form class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
+                        <input id="asunto__form" class="formcontato__input" type="text" name="asunto" placeholder="Asunto"  pattern="[A-Za-záéíóúüñÑ0-9\s]+" required maxlength="50">
+                        <textarea id="mensage__form" class="formcontato__textarea" rows="5" cols="40" name="mensaje" placeholder="Mensaje"  pattern="[A-Za-záéíóúüñÑ0-9\s]" required maxlength="300"></textarea>
+                        <button  id="btn__form" type="submit" class="formcontato__botao">Enviar mensaje</button>
                     </form>
                 </div>
 
